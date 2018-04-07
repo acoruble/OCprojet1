@@ -1,4 +1,4 @@
-/* declaration ecriture */
+/* declaration ecriture */ /*essai pour git hub*/
 @font-face {
     font-family: 'fontawesome';
     src: url('fonts/FontAwesome.otf');
@@ -7,83 +7,83 @@
 	src: url('fonts/FontAwesome.ttf');
 	src: url('fonts/FontAwesome.woff');
 }
-@font-face { 
+@font-face {
 	font-family: 'glyphicons';
 	src: url('fonts/glyphicons-halflings.eot');
 	src: url('fonts/glyphicons-halflings.svg');
 	src: url('fonts/glyphicons-halflings.ttf');
 	src: url('fonts/glyphicons-halflings.woff');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-black';
 	src: url('fonts/Roboto-Black.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-blackitalic';
 	src: url('fonts/Roboto-BlackItalic.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-bold';
 	src: url('fonts/Roboto-Bold.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-bolditalic';
 	src: url('fonts/Roboto-BoldItalic.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-italic';
 	src: url('fonts/Roboto-Italic.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-light';
 	src: url('fonts/Roboto-Light.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-lightitalic';
 	src: url('fonts/Roboto-LightItalic.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-medium';
 	src: url('fonts/Roboto-Medium.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-mediumitalic';
 	src: url('fonts/Roboto-MediumItalic.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-regular';
 	src: url('fonts/Roboto-Regular.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-thin';
 	src: url('fonts/Roboto-Thin.ttf');
 }
-@font-face { 
+@font-face {
 	font-family: 'roboto-thinitalic';
 	src: url('fonts/Roboto-ThinItalic.ttf');
 }
 /* declaration animation */
-@keyframes barredechargement { 
-	0% { width:0%;;	} 
-	33% { width:100%; } 
+@keyframes barredechargement {
+	0% { width:0%;;	}
+	33% { width:100%; }
 	66% { width:100%; }
 	100% { width:100%; }
 }
-@-webkit-keyframes barredechargement { 
-	0% { width:0%;;	} 
-	33% { width:100%; } 
+@-webkit-keyframes barredechargement {
+	0% { width:0%;;	}
+	33% { width:100%; }
 	66% { width:100%; }
 	100% { width:100%; }
 }
-@keyframes slider { 
-	0% { transform: translateX(0%);	} 
-	33% { transform: translateX(0%); } 
+@keyframes slider {
+	0% { transform: translateX(0%);	}
+	33% { transform: translateX(0%); }
 	66% { transform: translateX(-100%); }
 	100% { transform: translateX(-100%); }
 }
-@-webkit-keyframes slider { 
-	0% { transform: translateX(0%);	} 
-	33% { transform: translateX(0%); } 
+@-webkit-keyframes slider {
+	0% { transform: translateX(0%);	}
+	33% { transform: translateX(0%); }
 	66% { transform: translateX(-100%); }
 	100% { transform: translateX(-100%); }
 }
@@ -114,7 +114,7 @@
 	nav li {
 		list-style-type: none;
 		display:block;
-		float:left; 
+		float:left;
 		text-align:center;
 		padding:5px;
 		font-family:roboto-regular;
@@ -380,7 +380,7 @@
 		margin-bottom:15px;
 	}
 	.all_works, .creative, .corporate, .portfolio {
-		float:left; 
+		float:left;
 		width:100px;
 		height:30px;
 		font-family:roboto-regular;
