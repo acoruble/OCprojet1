@@ -1,0 +1,616 @@
+/* declaration ecriture */
+@font-face {
+    font-family: 'fontawesome';
+    src: url('fonts/FontAwesome.otf');
+	src: url('fonts/FontAwesome.eot');
+	src: url('fonts/FontAwesome.svg');
+	src: url('fonts/FontAwesome.ttf');
+	src: url('fonts/FontAwesome.woff');
+}
+@font-face { 
+	font-family: 'glyphicons';
+	src: url('fonts/glyphicons-halflings.eot');
+	src: url('fonts/glyphicons-halflings.svg');
+	src: url('fonts/glyphicons-halflings.ttf');
+	src: url('fonts/glyphicons-halflings.woff');
+}
+@font-face { 
+	font-family: 'roboto-black';
+	src: url('fonts/Roboto-Black.ttf');
+}
+@font-face { 
+	font-family: 'roboto-blackitalic';
+	src: url('fonts/Roboto-BlackItalic.ttf');
+}
+@font-face { 
+	font-family: 'roboto-bold';
+	src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face { 
+	font-family: 'roboto-bolditalic';
+	src: url('fonts/Roboto-BoldItalic.ttf');
+}
+@font-face { 
+	font-family: 'roboto-italic';
+	src: url('fonts/Roboto-Italic.ttf');
+}
+@font-face { 
+	font-family: 'roboto-light';
+	src: url('fonts/Roboto-Light.ttf');
+}
+@font-face { 
+	font-family: 'roboto-lightitalic';
+	src: url('fonts/Roboto-LightItalic.ttf');
+}
+@font-face { 
+	font-family: 'roboto-medium';
+	src: url('fonts/Roboto-Medium.ttf');
+}
+@font-face { 
+	font-family: 'roboto-mediumitalic';
+	src: url('fonts/Roboto-MediumItalic.ttf');
+}
+@font-face { 
+	font-family: 'roboto-regular';
+	src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face { 
+	font-family: 'roboto-thin';
+	src: url('fonts/Roboto-Thin.ttf');
+}
+@font-face { 
+	font-family: 'roboto-thinitalic';
+	src: url('fonts/Roboto-ThinItalic.ttf');
+}
+/* declaration animation */
+@keyframes barredechargement { 
+	0% { width:0%;;	} 
+	33% { width:100%; } 
+	66% { width:100%; }
+	100% { width:100%; }
+}
+@-webkit-keyframes barredechargement { 
+	0% { width:0%;;	} 
+	33% { width:100%; } 
+	66% { width:100%; }
+	100% { width:100%; }
+}
+@keyframes slider { 
+	0% { transform: translateX(0%);	} 
+	33% { transform: translateX(0%); } 
+	66% { transform: translateX(-100%); }
+	100% { transform: translateX(-100%); }
+}
+@-webkit-keyframes slider { 
+	0% { transform: translateX(0%);	} 
+	33% { transform: translateX(0%); } 
+	66% { transform: translateX(-100%); }
+	100% { transform: translateX(-100%); }
+}
+/* debut css */
+/* s'applique a l entete */
+#haut {
+	display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+		@media all and (max-width: 1200px)
+		{
+			#haut {
+				flex-direction:column;
+			}
+		}
+	#logo, #menu{
+		margin-bottom:20px;
+		margin-top:30px;
+	}
+		@media all and (max-width: 1200px)
+		{
+			#logo, #menu {
+				margin:auto;
+			}
+		}
+	/* s'applique au menu */
+	nav li {
+		list-style-type: none;
+		display:block;
+		float:left; 
+		text-align:center;
+		padding:5px;
+		font-family:roboto-regular;
+		}
+	nav a {
+		text-decoration:none;
+		color:#797979;
+		}
+	nav a:hover {
+		border-top: 3px solid #5CADD3;
+		padding-top:40px;
+		color:black !important;
+	}
+	nav a:visited {
+		color:#797979;
+	}
+	/* s'applique au slider */
+	#image {
+	overflow: hidden;
+	height:auto;
+	}
+	.slider_webagency {
+		width:100%;
+		height:100%;
+	}
+	#slider {
+	display:flex;
+	width:100%;
+	animation: 10s slider infinite alternate;
+	-webkit-animation: 10s slider infinite alternate;
+	}
+	/* s'applique a la barre de chargement */
+	.barre {
+		height: 5px;
+		position: relative;
+		background: #D8D8D8;
+	}
+	.chargement {
+		position:relative;
+		width: 50%;
+		height:100%;
+		background:#5CADD3;
+		animation: 10s barredechargement infinite;
+		-webkit-animation:10s barredechargement infinite;
+	}
+	/* s'applique texte du slider */
+	#texte_slider {
+		position:absolute;
+		margin-left:15%;
+		margin-top:-25%;
+		width:35%;
+		text-align:left;
+		color:white;
+	}
+		@media all and (max-width: 1200px)
+		{
+			#texte_slider {
+				width:80%;
+			}
+		}
+	#texte_slider h1{
+		text-transform:uppercase;
+		font-size:2em;
+		font-family:roboto-bold;
+	}
+	#texte_slider strong {
+		color:#5CADD3;
+	}
+	#texte_slider h2{
+		font-size:0.8em;
+		font-family:roboto-regular;
+	}
+	.bouton_slider{
+		font-size:1em;
+		font-family:roboto-bold;
+		background-color:#5CADD3;
+		width:100px;
+		height:20px;
+		text-align:center;
+		padding:2% 2% 2% 2%;
+		border-radius:4px;
+		border-bottom: 3px solid #4494BB;
+		color:white;
+	}
+	#texte_slider a{
+		text-decoration:none;
+		color:white;
+	}
+	#texte_slider a:visited {
+		color:white;
+	}
+	/* s'applique aux flèches du sldier */
+	.fa-angle-left {
+		position:absolute;
+		margin-left:1%;
+		margin-top:-18%;
+		color:white;
+	}
+	.fa-angle-right	{
+		position:absolute;
+		margin-left:97%;
+		margin-top:-18%;
+		color:white;
+	}
+/* s'applique à la partie service */
+#services {
+}
+	#services h3 {
+		text-transform:uppercase;
+		font-size:2.5em;
+		font-family:roboto-bold;
+		padding-top:1%;
+		text-align:center;
+	}
+	#titre p {
+		text-align:center;
+		font-size:1em;
+		font-family:roboto-regular;
+		color:#64686D;
+	}
+
+	/* dessine le séparateur trait + cercle */
+	.dessin {
+		display:flex;
+		justify-content:center;
+	}
+	.cercle {
+		width: 15px;
+		height: 15px;
+		border: 2px solid white;
+		border-radius: 100%;
+		background: #4494BB;
+		margin-top:-15px;
+	}
+	.trait {
+		margin-top:-6px;
+		width: 50px;
+		height: 1px;
+		background: #EBEBEB;
+	}
+	/* s'applique a l image d ordinateur */
+	#ordinateur {
+		width:60%;
+		padding-left:10%;
+		text-align:center;
+	}
+		@media all and (max-width: 1200px)
+		{
+			#ordinateur {
+				width:100%;
+				padding-left:0%;
+				text-align:center;
+			}
+		}
+	/* s'applique a l'image d'ordinateur et au texte à sa droite */
+	#ordinateurliste {
+		display:flex;
+	}
+		@media all and (max-width: 1200px)
+		{
+			#ordinateurliste {
+				flex-direction:column;
+			}
+		}
+	#ordinateurliste p {
+		font-size:1em;
+		font-family:roboto-regular;
+		color:#64686D;
+		margin-top:-13px;
+	}
+	#liste {
+		text-align:left;
+		width:80%;
+		padding-top:50px;
+		padding-bottom:40px;
+	}
+		@media all and (max-width: 1200px)
+		{
+			#liste {
+				margin:auto;
+			}
+		}
+	.boite {
+		display:flex;
+		width:85%;
+		height:30%;
+		margin-bottom:10px;
+	}
+		@media all and (max-width: 1200px)
+		{
+			.boite {
+				width:100%;
+				justify-content:center;
+			}
+		}
+	.texte_boite {
+		margin-left:20px;
+		width:80%;
+		height:90%;
+	}
+	#liste h4 {
+		font-family:roboto-bold;
+		font-size:1em;
+	}
+	/* s'applique aux icones */
+	.icone {
+		width:auto;
+		height:auto;
+		text-align:center;
+	}
+	.fa-chart-line, .fa-cubes, .fa-chart-pie {
+		font-size:2.5em;
+		color:#4494BB;
+		border: 2px solid #EBEBEB;
+		border-radius: 100%;
+		padding: 15px 15px 15px 15px;
+	}
+	.cercle2 {
+		width: 10px;
+		height: 10px;
+		border: 2px solid white;
+		border-radius: 100%;
+		background: #4494BB;
+		position:absolute;
+		margin-top:-45px;
+		margin-left:65px;
+	}
+	#cercle3 {
+		width: 10px;
+		height: 10px;
+		border: 2px solid white;
+		border-radius: 100%;
+		background: #4494BB;
+		position:absolute;
+		margin-top:-45px;
+		margin-left:70px;
+	}
+/* s'applique à la partie projet */
+#projets {
+	background-color:#F5F5F5;
+	display:flex;
+	flex-direction:column;
+	padding-bottom:3%;
+}
+	/* s'applique au texte*/
+	#projets h3 {
+		text-transform:uppercase;
+		font-size:2.2em;
+		font-family:roboto-bold;
+		text-align:center;
+	}
+	.texte_projets p {
+		text-align:center;
+		font-size:1em;
+		font-family:roboto-regular;
+		color:#64686D;
+	}
+	/* s'applique aux boutons */
+	#boutons {
+		margin: auto;
+		height:80px;
+		margin-top:20px;
+		margin-bottom:15px;
+	}
+	.all_works, .creative, .corporate, .portfolio {
+		float:left; 
+		width:100px;
+		height:30px;
+		font-family:roboto-regular;
+		font-size:1.1em;
+		background-color:#E5E5E5;
+		padding-top:10px;
+		text-align:center;
+		color:white;
+	}
+	.all_works a{
+		color:white;
+	}
+	.creative a, .corporate a, .portfolio a{
+		color:#64686D;
+	}
+	#boutons a::after {
+		content:'';
+		position:absolute;
+		margin-top:31px;
+		margin-left:-45px;
+		display : inline-block;
+		height : 0;
+		width : 0;
+		border-top : 12px solid #468CAD;
+		border-right : 9px solid transparent;
+		border-left : 9px solid transparent;
+		opacity:0;
+}
+	.all_works {
+		border-radius:5px 0px 0px 5px;
+		background-color:#4494BB;
+		border-bottom:3px solid #468CAD;
+	}
+	.all_works::after {
+		content:'';
+		position:absolute;
+		margin-top:31px;
+		margin-left:-45px;
+		display : inline-block;
+		height : 0;
+		width : 0;
+		border-top : 12px solid #468CAD;
+		border-right : 9px solid transparent;
+		border-left : 9px solid transparent;
+		opacity:1;
+}
+	.portfolio{
+		border-radius:0px 5px 5px 0px;
+	}
+	#boutons a{
+		text-decoration:none;
+	}
+	#boutons a:visited {
+		color:#64686D;
+	}
+	.all_works a:visited {
+		color:white !important;
+	}
+	.creative:hover{
+		background-color:#4494BB;
+		border-bottom:3px solid #468CAD;
+	}
+	.corporate:hover{
+		background-color:#4494BB;
+		border-bottom:3px solid #468CAD;
+	}
+	.portfolio:hover{
+		background-color:#4494BB;
+		border-bottom:3px solid #468CAD;
+	}
+	#boutons a:hover {
+		color:white;
+	}
+	#boutons a:hover::after {
+		opacity:1;
+	}
+	/* s'applique au portfolio */
+	#portfolio {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width:1600px;
+		margin:auto;
+	}
+	.image_portfolio {
+		width:20%;
+		margin:0 10px 0 10px;
+	}
+	.image_portfolio img {
+		width:100%;
+		/* max height & max width /2 */
+	}
+	/* s'applique au survol des images du portfolio */
+	.survol{
+		height:30%;
+		width:auto;
+		position:relative;
+		bottom:32%;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity:0;
+	}
+	.survol strong {
+		text-align:left;
+		font-size:1em;
+		font-family:roboto-bold;
+		color:white;
+		position:relative;
+		top:5px;
+		padding-left: 7%;
+	}
+	.survol p {
+		text-align:left;
+		font-size:0.8em;
+		font-family:roboto-regular;
+		color:white;
+		position:relative;
+		padding-left: 7%;
+	}
+	.image_portfolio:hover .survol {
+		opacity:1;
+	}
+	/* s'applique à l'oeil qui apparait au survol */
+	.fa-eye {
+		font-size:0.8em;
+		color:white;
+		position:absolute;
+		bottom:60%;
+		left:80%;
+		background-color:#4494BB;
+		width: 24px;
+		height: 24px;
+		border: 2px solid white;
+		border-radius: 100%;
+		padding-top:8px;
+		padding-left:4px;
+		padding-right:4px;
+		text-align:center;
+	}
+/* s'applique sur le bas de page, partie contact */
+#formulaire {
+	height:610px;
+	overflow: hidden;
+}
+/* s'applique sur la carte google maps */
+	#maps {
+		width:100%;
+		z-index: 1;
+		position:relative;
+	}
+	/* s'applique sur le formulaires */
+	#boite_formulaire {
+		width:350px;
+		height:515px;
+		background-color: rgba(255,255,255,0.8);
+		position:relative;
+		top:-1200px;
+		left:60%;
+		z-index: 3;
+		text-align:center;
+	}
+		@media all and (max-width: 1200px)
+		{
+			#boite_formulaire{
+
+			}
+		}
+	#boite_formulaire h3 {
+		font-size:1.5em;
+		font-family:roboto-bold;
+		color:black;
+		text-align:left;
+		padding-top:15px;
+		padding-left:20px;
+	}
+	#boite_formulaire p {
+		font-size:0.9em;
+		font-family:roboto-regular;
+		color:#64686D;
+		text-align:left;
+		padding-left:20px;
+		margin-top:-10px;
+	}
+	#boite_formulaire strong {
+		font-family:roboto-bold;
+		font-size:1em;
+	}
+	#boite_formulaire span {
+		border-bottom:1px dashed black;
+	}
+	#name, #email, #sujet {
+		width:300px;
+		height:30px;
+		border: 1px solid #CCCCCC;
+		border-radius:5px;
+		font-family:roboto-regular;
+		padding-left:10px;
+		margin-bottom:15px;
+		font-size:0.9em;
+	}
+	#message {
+		width:300px;
+		height:170px;
+		border: 1px solid #CCCCCC;
+		border-radius:5px;
+		font-family:roboto-regular;
+		padding-left:10px;
+		margin-bottom:15px;
+		color:#767676;
+		font-size:0.9em;
+	}
+	#envoyer {
+		margin-right:215px;
+		font-size:1em;
+		color:white;
+		font-family:roboto-bold;
+		background-color:#5CADD3;
+		width:100px;
+		height:40px;
+		text-align:center;
+		padding:2% 2% 2% 2%;
+		border-radius:5%;
+		border-bottom: 3px solid #4494BB;
+	}
+	/* s'applique sur le fond bleu sur la carte google maps */
+	#fond_bleu {
+		position:relative;
+		top:-605px;
+		width:100%;
+		height:600px;
+		background-color:#5CADD3;
+		z-index: 2;
+		opacity:0.3;
+	}
